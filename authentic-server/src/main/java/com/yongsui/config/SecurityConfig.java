@@ -45,7 +45,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .disable()
                 .authorizeRequests()
                 // 设置拦截路径与权限
-                .antMatchers("/user/findUserByEmail").hasAnyAuthority("read")
+                .antMatchers("/findUserByEmail").hasAnyAuthority("read11111")
                 .anyRequest()
                 .authenticated()
                 // 分割

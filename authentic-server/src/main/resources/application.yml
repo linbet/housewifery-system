@@ -15,6 +15,7 @@ mybatis:
 #  level:
 #    com.yongsui: debug
 
+# 私钥与公钥的存放地址
 rsa:
   key:
     pubKeyFile: D://auth/id_key_rsa.pub

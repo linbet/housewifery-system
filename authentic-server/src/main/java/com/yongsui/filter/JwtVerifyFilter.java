@@ -5,7 +5,6 @@ import com.yongsui.config.RsaKeyProperties;
 import com.yongsui.domain.Payload;
 import com.yongsui.dto.UserDto;
 import com.yongsui.utils.JwtUtils;
-import io.jsonwebtoken.security.SignatureException;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

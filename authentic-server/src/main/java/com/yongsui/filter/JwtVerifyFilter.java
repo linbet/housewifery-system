@@ -1,9 +1,9 @@
 package com.yongsui.filter;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.yongsui.config.RsaKeyProperties;
 import com.yongsui.domain.Payload;
 import com.yongsui.dto.UserDto;
+import com.yongsui.utils.JsonUtils;
 import com.yongsui.utils.JwtUtils;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -49,7 +49,7 @@ public class JwtVerifyFilter extends BasicAuthenticationFilter {
                 Map resultMap = new HashMap();
                 resultMap.put("code",HttpServletResponse.SC_UNAUTHORIZED);
                 resultMap.put("msg","身份验证过期或错误，请重新登录！");
-                out.write(new ObjectMapper().writeValueAsString(resultMap));
+                out.write(JsonUtils.toString(resultMap));
                 out.flush();
                 out.close();
             }
@@ -61,7 +61,7 @@ public class JwtVerifyFilter extends BasicAuthenticationFilter {
             Map resultMap = new HashMap();
             resultMap.put("code",HttpServletResponse.SC_FORBIDDEN);
             resultMap.put("msg","请登录！");
-            out.write(new ObjectMapper().writeValueAsString(resultMap));
+            out.write(JsonUtils.toString(resultMap));
             out.flush();
             out.close();
         }

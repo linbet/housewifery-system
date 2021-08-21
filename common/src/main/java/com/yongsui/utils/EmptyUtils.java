@@ -24,7 +24,6 @@ public class EmptyUtils {
      * @return
      */
     public static Boolean isEmpty(String obj){
-        System.out.println(1);
         return (obj == null || "".equals(obj));
     }
 

@@ -12,6 +12,7 @@
     <modules>
         <module>common</module>
         <module>authentic-server</module>
+        <module>user-server</module>
     </modules>
 
     <parent>

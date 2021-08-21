@@ -5,6 +5,7 @@ import com.yongsui.config.RsaKeyProperties;
 import com.yongsui.dto.PermissionDto;
 import com.yongsui.dto.RoleDto;
 import com.yongsui.dto.UserDto;
+import com.yongsui.utils.JsonUtils;
 import com.yongsui.utils.JwtUtils;
 import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -102,7 +103,7 @@ public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
             Map resultMap = new HashMap();
             resultMap.put("code",HttpServletResponse.SC_OK);
             resultMap.put("msg","认证通过！");
-            out.write(new ObjectMapper().writeValueAsString(resultMap));
+            out.write(JsonUtils.toString(resultMap));
             out.flush();
             out.close();
         }catch (Exception outEx){
@@ -119,7 +120,7 @@ public class JwtLoginFilter extends UsernamePasswordAuthenticationFilter {
             Map resultMap = new HashMap();
             resultMap.put("code",HttpServletResponse.SC_UNAUTHORIZED);
             resultMap.put("msg","用户名或密码错误！");
-            out.write(new ObjectMapper().writeValueAsString(resultMap));
+            out.write(JsonUtils.toString(resultMap));
             out.flush();
             out.close();
         }catch (Exception outEx){

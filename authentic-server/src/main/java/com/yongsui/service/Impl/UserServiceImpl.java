@@ -29,21 +29,20 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     // 为security框架提供信息源
-    //@Override
+    @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        UserDto userDto = new UserDto();
         if(email != null && email != ""){
             User user = userMapper.findUserByEmail(email);
             if(user != null){
-                UserDto userDto = new UserDto();
                 BeanUtils.copyProperties(user,userDto);
-
                 Long roleId = user.getRoleId();
                 RoleDto roleDto = this.findRoleById(roleId);
                 userDto.setRole(roleDto);
                 return userDto;
             }
         }
-        return null;
+        return userDto;
     }
 
     // 查询用户时的辅助方法，查角色信息
@@ -71,28 +70,5 @@ public class UserServiceImpl implements UserService {
         }
         return null;
     }
-
-    @Override
-    public UserDto findUserByEmail(String email) {
-        if(email != null && email != ""){
-            User user = userMapper.findUserByEmail(email);
-            if(user != null){
-                UserDto userDto = new UserDto();
-                BeanUtils.copyProperties(user,userDto);
-
-                Long roleId = user.getRoleId();
-                RoleDto roleDto = this.findRoleById(roleId);
-                // 保证系统安全，不向前端返回权限信息
-                roleDto.setPermissionDtoList(null);
-                userDto.setPassword(null);
-                userDto.setRole(roleDto);
-                return userDto;
-            }
-        }
-        return null;
-    }
-
-
-
 
 }

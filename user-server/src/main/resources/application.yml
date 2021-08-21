@@ -1,0 +1,16 @@
+server:
+  port: 9002
+#&&allowPublicKeyRetrieval=True
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/housewifery?useSSL=false&&serverTimezone=UTC&&useUnicode=true&&characterEncoding=utf8
+    username: root
+    password: root
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath*:mapper/**/*.xml
+
+rsa:
+  key:
+    pubKeyFile: D://auth/id_key_rsa.pub

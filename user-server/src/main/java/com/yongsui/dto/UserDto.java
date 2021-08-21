@@ -28,6 +28,8 @@ public class UserDto implements UserDetails {
 
     private String address;
 
+    private Long roleId;
+
     private Integer status;
 
     private String createTime;
@@ -99,6 +101,14 @@ public class UserDto implements UserDetails {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public Long getRoleId() {
+        return roleId;
+    }
+
+    public void setRoleId(Long roleId) {
+        this.roleId = roleId;
     }
 
     public Integer getStatus() {

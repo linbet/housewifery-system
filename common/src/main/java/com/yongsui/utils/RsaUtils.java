@@ -10,6 +10,7 @@ import java.security.spec.X509EncodedKeySpec;
 import java.util.Base64;
 
 /**
+ * 生成公钥和私钥的工具类
  * @author tengmingfa
  */
 public class RsaUtils {

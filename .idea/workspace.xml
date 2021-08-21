@@ -2,40 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3535a079-366b-4f48-a966-cee46cba650e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/user-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/UserServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/config/RsaKeyProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/PermissionDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/RoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/entity/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/filter/JwtVerifyFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user-server/user-server.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yongsui/domain/Feedback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/src/main/java/com/yongsui/domain/FeedbackEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-server/src/main/resources/mapper/RoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/filter/JwtLoginFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/filter/JwtLoginFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/filter/JwtVerifyFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/filter/JwtVerifyFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/filter/JwtLoginFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/filter/JwtLoginFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/filter/JwtVerifyFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/filter/JwtVerifyFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/service/Impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/service/Impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/authentic-server/target/classes/com/yongsui/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/RsaUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/RsaUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/UserDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/UserDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/target/classes/com/yongsui/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/target/classes/com/yongsui/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/target/classes/com/yongsui/dto/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/target/classes/com/yongsui/dto/UserDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/target/classes/com/yongsui/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/target/classes/com/yongsui/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/user-server/target/classes/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/user-server/target/classes/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/common/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,19 +33,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/UserMapper.xml">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/RoleMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="175">
+              <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/mapper/UserMapper.java">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/mapper/RoleMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="100">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -71,33 +54,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/RoleService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/UserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/UserController.java">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/RoleServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="722">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/RoleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/EmptyUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="521">
+              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+              <folding>
+                <element signature="e#269#270#0" expanded="true" />
+                <element signature="e#322#323#0" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#827#828#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,8 +109,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
+        <option value="Enum" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -127,7 +128,6 @@
         <option value="$PROJECT_DIR$/authentic-server/pom.xml" />
         <option value="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/interceptor/AuthorityExceptionHandler.java" />
         <option value="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/interceptor/AuthorityNullUserExceptionHandler.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/EmptyUtils.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/JwtUtils.java" />
         <option value="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/HousewiferyApplication.java" />
         <option value="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/config/SecurityConfig.java" />
@@ -139,7 +139,6 @@
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/config/RsaKeyProperties.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/config/SecurityConfig.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/PermissionDto.java" />
-        <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/UserDto.java" />
         <option value="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/filter/JwtLoginFilter.java" />
         <option value="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/filter/JwtVerifyFilter.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/filter/JwtVerifyFilter.java" />
@@ -149,9 +148,19 @@
         <option value="$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/controller/UserController.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/UserService.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/EmptyUtils.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/UserDto.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yongsui/domain/FeedbackEnum.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yongsui/domain/Feedback.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/RsaUtils.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/mapper/RoleMapper.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/resources/mapper/RoleMapper.xml" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/RoleService.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/RoleServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -185,8 +194,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="228" />
-    <option name="y" value="262" />
+    <option name="x" value="211" />
+    <option name="y" value="235" />
     <option name="width" value="1563" />
     <option name="height" value="1000" />
   </component>
@@ -311,11 +320,14 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1629518254435" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1629536410304" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../card-mangement-enterprise" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
@@ -433,7 +445,7 @@
       <workItem from="1629248991486" duration="7245000" />
       <workItem from="1629335307446" duration="6187000" />
       <workItem from="1629421718422" duration="12107000" />
-      <workItem from="1629508199793" duration="9837000" />
+      <workItem from="1629508199793" duration="22477000" />
     </task>
     <task id="LOCAL-00001" summary="公共模块">
       <created>1629092859856</created>
@@ -468,12 +480,12 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59862000" />
+    <option name="totallyTimeSpent" value="72502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22974414" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22547974" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -483,7 +495,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44143167" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.42299348" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.48698482" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -517,59 +529,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/header/HeaderWriterFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.3.RELEASE/spring-web-5.2.3.RELEASE.jar!/org/springframework/web/filter/OncePerRequestFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/context/SecurityContextPersistenceFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-web/5.2.1.RELEASE/spring-security-web-5.2.1.RELEASE.jar!/org/springframework/security/web/authentication/UsernamePasswordAuthenticationFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="45" column="69" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/mydownload/我的工具类/AJAX.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="6" column="35" lean-forward="true" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/jsonwebtoken/jjwt-api/0.10.7/jjwt-api-0.10.7.jar!/io/jsonwebtoken/Jwts.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="41" column="58" selection-start-line="41" selection-start-column="58" selection-end-line="41" selection-end-column="58" />
-          <folding>
-            <element signature="e#1296#1297#0" expanded="true" />
-            <element signature="e#1390#1391#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.2.3.RELEASE/spring-beans-5.2.3.RELEASE.jar!/org/springframework/beans/BeanUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1317">
-          <caret line="355" column="23" selection-start-line="355" selection-start-column="23" selection-end-line="355" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.2.1.RELEASE/spring-security-core-5.2.1.RELEASE.jar!/org/springframework/security/authentication/dao/DaoAuthenticationProvider.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1046">
@@ -618,50 +577,6 @@
             <element signature="e#2435#2436#0" expanded="true" />
             <element signature="e#3092#3093#0" expanded="true" />
             <element signature="e#3142#3143#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/JwtUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2150">
-          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/RsaUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/domain/Payload.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/EmptyUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding>
-            <element signature="e#269#270#0" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#636#637#0" expanded="true" />
-            <element signature="e#691#692#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#858#859#0" expanded="true" />
-            <element signature="e#974#975#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -715,13 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/entity/Role.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -763,36 +671,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#1053#1054#0" expanded="true" />
             <element signature="e#1093#1094#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2633#2634#0" expanded="true" />
-            <element signature="e#2660#2661#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-            <element signature="e#2760#2761#0" expanded="true" />
-            <element signature="e#2838#2839#0" expanded="true" />
-            <element signature="e#2865#2866#0" expanded="true" />
-            <element signature="e#2929#2930#0" expanded="true" />
-            <element signature="e#2956#2957#0" expanded="true" />
-            <element signature="e#2635#2636#0" expanded="true" />
-            <element signature="e#2685#2686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/JsonUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -857,34 +735,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/filter/JwtVerifyFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="423">
           <caret line="24" column="4" lean-forward="true" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/service/Impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#loadUserByUsername#0;class#UserServiceImpl#0" />
-            <element signature="method#findRoleById#0;class#UserServiceImpl#0" />
           </folding>
         </state>
       </provider>
@@ -942,17 +798,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+          <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -966,10 +815,127 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/dto/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="105" column="29" selection-start-line="105" selection-start-column="29" selection-end-line="105" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1913#1914#0" expanded="true" />
+            <element signature="e#1955#1956#0" expanded="true" />
+            <element signature="e#1991#1992#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/JsonUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/domain/Payload.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/domain/FeedbackEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <element signature="e#403#404#0" expanded="true" />
+            <element signature="e#433#434#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#492#493#0" expanded="true" />
+            <element signature="e#522#523#0" expanded="true" />
+            <element signature="e#548#549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/entity/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="617">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/JwtUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1697">
+          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/RsaUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="45" column="28" lean-forward="true" selection-start-line="45" selection-start-column="28" selection-end-line="45" selection-end-column="28" />
+        <state relative-caret-position="556">
+          <caret line="46" column="86" lean-forward="true" selection-start-line="46" selection-start-column="86" selection-end-line="46" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/domain/Feedback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/authentic-server/src/main/java/com/yongsui/service/Impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="38" column="33" lean-forward="true" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#findRoleById#0;class#UserServiceImpl#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="26" column="9" lean-forward="true" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/resources/mapper/RoleMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="31" lean-forward="true" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/mapper/RoleMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -978,8 +944,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="582">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/filter/JwtVerifyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/yongsui/utils/EmptyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <folding>
+            <element signature="e#269#270#0" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/controller/RoleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/user-server/src/main/java/com/yongsui/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -989,9 +1007,81 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>user-server</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

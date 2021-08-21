@@ -10,7 +10,7 @@
 
     <!--添加用户-->
     <insert id="addUser">
-        insert into user (username,email,password,phone,avatar,qq,wechat,address) values (
+        insert into user (username,email,password,phone,avatar,qq,wechat,address,role_id) values (
         #{username},
         #{email},
         #{password},
@@ -18,7 +18,8 @@
         #{avatar},
         #{qq},
         #{wechat},
-        #{address}
+        #{address},
+        #{roleId}
         )
     </insert>
 
